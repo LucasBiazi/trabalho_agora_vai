@@ -8,7 +8,7 @@ section{
     justify-content: flex-end;
     width: 100vw;
     height: 100vh;
-    background-image: url(${imagem});
+    background: url(${imagem});
 }
 form{
     display: flex;
@@ -20,13 +20,20 @@ form{
     align-items: center;
     align-content:center;
 }
+.divLb1{
+    display: flex;
+    width: 560px;
+    justify-content: flex-start;
+}
 label{
     color: white;
-    font-size: 15px;
+    font-size: 23px;
     padding: 10px;
 }
-.divBotao{
+.divdoBotao{
     margin-top: 80px;
+}
+.divBotao{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -37,7 +44,7 @@ label{
 }
 input{
     width: 40vw;
-    border-radius: 20px;
+    border-radius: 10px;
     color: black;
     cursor: text;
     /* box-shadow: 5px 5px rgb(000,000,000, 40%); */
@@ -45,10 +52,10 @@ input{
 nav{
     display: flex;
     height: 500px;
-    width: 500px;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
+    width: inherit;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
     margin-bottom: 20px;
 }
 a{
@@ -59,16 +66,10 @@ a{
 }
 
     @media only screen and (max-width: 850px) {
-    nav{
-        width: 100%;
-    }
     section{
         background-image: url(${imagem2});
         height: 100%;
         width: 100%;
-    }
-    label{
-        font-size: 30px;
     }
     form{
         background: rgb(000,000,000, 15%);
@@ -77,10 +78,21 @@ a{
         width: 100vw;
         height: 100vh;  
     }
+    .divLb1{
+    width: 310px;
+    }
+    label{
+        font-size: 30px;
+    }
     input{
-    width: 60vw;
-    border-radius: 20px;
+    width: 80vw;
+    border-radius: 10px;
     color: black;
+    }
+    nav{
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;      
     }
     }
 `;
