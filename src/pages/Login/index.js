@@ -7,15 +7,21 @@ export default function Login() {
         <CssLogin>
             <section>
                 <form>
-                    <label>Nome</label>
-                    <input type="text" required placeholder="Nome"></input>
-                    <label>Senha</label>
-                    <input type="password" required placeholder="Senha"></input>
-                    <Link to="../">
-                        <div className="divBotao">
-                            <p>ENTRAR</p>
-                        </div>
-                    </Link>
+                    <div className="divLb1">
+                        <label>Nome:</label>
+                    </div>
+                    <input type="text" required placeholder="Seu nome aqui"></input>
+                    <div className="divLb1">
+                        <label>Senha:</label>
+                    </div>
+                    <input type="password" required placeholder="Sua senha aqui"></input>
+                    <div className="divdoBotao">
+                        <Link to="../">
+                            <div className="divBotao">
+                                <p>ENTRAR</p>
+                            </div>
+                        </Link>
+                    </div>
 
                     <nav>
                         <Link to="../ForgotThePassword">
