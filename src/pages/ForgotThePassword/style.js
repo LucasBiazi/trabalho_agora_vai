@@ -16,7 +16,7 @@ section{
     width: 100vw; 
     background-image: url(${imagem});
 }
-div{    
+form{    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -26,17 +26,23 @@ div{
     width: 500px;
     border-radius: 10px;    
 }
-.lb1{
-    margin-bottom: 20px;
+.divLb1{
+    display: flex;
+    width: inherit;
+    align-items: flex-start;
+    margin-left: 100px;
 }
-.lb2{
-    margin-top: 20px;
-    margin-left: 50px;
+.lb1{
+    margin-bottom: 5px;
 }
 .inemail{
     border-radius: 10px;    
     width: 400px;
     color: black;
+}
+.lb2{
+    margin-top: 20px;
+    margin-left: 50px;
 }
 .btnconf{
     margin-top: 50px;
@@ -44,14 +50,20 @@ div{
     width: 150px;
     height: 30px;
     border-radius: 10px;    
+    cursor: pointer;
+}
+.espaco{
+    margin-top: 50px;
 }
 .divBotao{
-    color: black;   
-    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
     border-radius: 100%;
     background: black;
-    height: 200px;
-    width: 200px;
+    height: 170px;
+    width: 170px;
 }
 @media only screen and (max-width: 850px) {
     section{
@@ -59,31 +71,39 @@ div{
         height: 100vh;
         width: 100vw;    
     }
-    div{
-        background: rgb(000,000,000, 15%);
-        height: 100vh;
-        width: 100vw;
+    form{
+        background: rgb(000,000,000,30%); 
+        width: 320px;
+        height: inherit;
     }
-    .divBotao{
-        margin-top: 150px;   
-        width: 200px;
-        height: 200px;
+    .divLb1{
+        margin-right: 45px;
     }
     .lb1,.lb2{
-        font-size: 25px;
+        font-size: 22px;
+    }
+    .lb2{
+        width: inherit;
+        width: 260px;
+        margin: 0px;
+        margin-top: 20px;
     }
     .btnconf{
     margin-top: 50px;
-    font-size: 25px;
-    width: 250px;
-    height: 100px;
+    font-size: 22px;
+    width: 140px;
+    height: 50px;
+    }
+    .espaco{
+    margin-top: 250px;
+    }
+    .divBotao{        
+        width: 150px;
+        height: 150px;
     }
     .inemail{
-    width: 275px;
-    height: 40px;
+    width: 270px;
+    height: 50px;
 }
 }
 `;
-
-
-
