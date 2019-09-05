@@ -7,11 +7,17 @@ export default function Login() {
         <CssSu>
             <section>
                 <form>
-                    <label>Nome</label>
+                    <div className="ajuste">
+                        <label>Nome:</label>
+                    </div>
                     <input type="text" required placeholder="Nome"></input>
-                    <label>Senha</label>
+                    <div className="ajuste">
+                        <label>Senha:</label>
+                    </div>
                     <input type="password" required placeholder="Senha"></input>
-                    <label>Email</label>
+                    <div className="ajuste">
+                        <label>Email:</label>
+                    </div>
                     <input type="password" required placeholder="E-mail"></input>
                     <div className="doisBtn">
                         <Link to="../">
