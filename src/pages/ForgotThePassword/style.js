@@ -21,7 +21,7 @@ form{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: rgb(000,000,000,75%);   
+    background: rgb(000,000,000, 45%);
     height: 500px;
     width: 500px;
     border-radius: 10px;    
@@ -36,13 +36,14 @@ form{
     margin-bottom: 5px;
 }
 .inemail{
+    text-indent: 10px;
     border-radius: 10px;    
     width: 400px;
     color: black;
 }
 .lb2{
     margin-top: 20px;
-    margin-left: 50px;
+    width: 404px;
 }
 .btnconf{
     margin-top: 50px;
@@ -62,8 +63,8 @@ form{
     color: black;
     border-radius: 100%;
     background: black;
-    height: 170px;
-    width: 170px;
+    height: 150px;
+    width: 150px;
 }
 @media only screen and (max-width: 850px) {
     section{
@@ -72,20 +73,16 @@ form{
         width: 100vw;    
     }
     form{
-        background: rgb(000,000,000,30%); 
-        width: 320px;
-        height: inherit;
-    }
-    .divLb1{
-        margin-right: 45px;
+        background: rgb(000,000,000,0%);     
     }
     .lb1,.lb2{
+        width: 310px;
         font-size: 22px;
     }
+    .lb1{
+        margin-left: 45px;
+    }
     .lb2{
-        width: inherit;
-        width: 260px;
-        margin: 0px;
         margin-top: 20px;
     }
     .btnconf{
@@ -98,12 +95,13 @@ form{
     margin-top: 250px;
     }
     .divBotao{        
-        width: 150px;
-        height: 150px;
+    width: 150px;
+    height: 150px;
     }
     .inemail{
-    width: 270px;
-    height: 50px;
+    width: 310px;
+    height: 45px;
+    font-size: 20px;
 }
 }
 `;
