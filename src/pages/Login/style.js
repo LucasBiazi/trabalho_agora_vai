@@ -22,13 +22,18 @@ form{
 }
 .divLb1{
     display: flex;
-    width: 560px;
+    width: 584px;
+    justify-content: flex-start;
+}
+.divLb2{    
+    margin-top: 20px;
+    display: flex;
+    width: 584px;
     justify-content: flex-start;
 }
 label{
     color: white;
-    font-size: 23px;
-    padding: 10px;
+    font-size: 18px;
 }
 .divdoBotao{
     margin-top: 80px;
@@ -39,15 +44,17 @@ label{
     justify-content: center;
     background: black;
     border-radius: 7px;
-    height: 50px;
-    width: 150px;
+    height: 40px;
+    width: 140px;
 }
 input{
-    width: 40vw;
+    text-indent: 10px;
+    font-size: 18px;
+    width: 580px;
+    height: 30px;
     border-radius: 10px;
     color: black;
     cursor: text;
-    /* box-shadow: 5px 5px rgb(000,000,000, 40%); */
 }
 nav{
     display: flex;
@@ -64,6 +71,9 @@ a{
     text-decoration: none;
     cursor: pointer;
 }
+p{
+    font-size: 18px;
+}
 
     @media only screen and (max-width: 850px) {
     section{
@@ -78,8 +88,8 @@ a{
         width: 100vw;
         height: 100vh;  
     }
-    .divLb1{
-    width: 310px;
+    .divLb1, .divLb2{
+    width: 304px;
     }
     label{
         font-size: 30px;
