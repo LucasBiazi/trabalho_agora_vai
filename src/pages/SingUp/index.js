@@ -7,28 +7,30 @@ export default function Login() {
         <CssSu>
             <section>
                 <form>
-                    <div className="ajuste">
-                        <label>Nome:</label>
+                    <div className="main_div">
+                        <div className="div_dos_label">
+                            <label>Nome:</label>
+                        </div>
+                        <input type="text" required placeholder="Nome"></input>
+                        <div className="div_dos_label ajuste">
+                            <label>Senha:</label>
+                        </div>
+                        <input type="password" required placeholder="Senha"></input>
+                        <div className="div_dos_label ajuste">
+                            <label>Email:</label>
+                        </div>
+                        <input type="text" required placeholder="E-mail"></input>
                     </div>
-                    <input type="text" required placeholder="Nome"></input>
-                    <div className="ajuste">
-                        <label>Senha:</label>
-                    </div>
-                    <input type="password" required placeholder="Senha"></input>
-                    <div className="ajuste">
-                        <label>Email:</label>
-                    </div>
-                    <input type="text" required placeholder="E-mail"></input>
                     <div className="doisBtn">
                         <Link to="../">
                             <div className="divBotao">
                                 <p>CADASTRAR</p>
                             </div>
                         </Link>
+                    </div>
+                    <div className="div_link">
                         <Link to="../">
-                            <div className="divBotao">
-                                <p>INÍCIO</p>
-                            </div>
+                            <p>INÍCIO</p>
                         </Link>
                     </div>
                 </form>
