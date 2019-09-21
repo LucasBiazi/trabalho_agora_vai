@@ -82,13 +82,16 @@ p{
 
     @media only screen and (max-width: 850px) {
 
-        section{
-            background-image: url(${imagem2});
-        height: 100%;
-        width: 100%;
+    section{
+    background-image: url(${imagem2});
+    height: 100%;
+    width: 100%;
+    }
+    .div_dos_label{
+        width: 300px;
     }
     label{
-        font-size: 30px;
+        font-size: 25px;
     }
     form{
         background: rgb(000,000,000, 15%);
@@ -98,7 +101,7 @@ p{
         height: 100vh;  
     }
     input{
-    width: 60vw;
+    width: 300px;
     border-radius: 10px;
     color: black;
     }
