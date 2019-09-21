@@ -16,43 +16,68 @@ form{
     height:100vh;
     width: 700px;
     background: rgb(000,000,000, 45%);
+}
+.main_div{
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    align-content:center;
+    width: inherit;
+    margin-top: 10px;
+}
+.div_dos_label{
+    display: flex;
+    width: 580px;
+    justify-content: flex-start;
+}
+.ajuste{
+    margin-top: 20px;
 }
 label{
     color: white;
-    font-size: 15px;
-    padding: 10px;
+    font-size: 18px;    
 }
 .divBotao{
-    margin-top: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
     background: black;
     border-radius: 7px;
-    height: 50px;
-    width: 150px;
+    height: 40px;
+    width: 140px;
 }
 .doisBtn{
-    width: 400px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    width: inherit;
+    margin-top: 50px;
 }
 input{
-    width: 40vw;
+    text-indent: 10px;
+    font-size: 18px;
+    width: 580px;
+    height: 30px;
     border-radius: 10px;
     color: black;
     cursor: text;
-    /* box-shadow: 5px 5px rgb(000,000,000, 40%); */
 }
 a{
     font-size: 10px;
     color: white;
     text-decoration: none;
     cursor: pointer;
+}
+.div_link{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: inherit;
+    height: inherit;
+    margin-bottom: 10px;
+}
+p{    
+    font-size: 18px;
 }
 
     @media only screen and (max-width: 850px) {
