@@ -11,7 +11,7 @@ export default function Login() {
                         <label>Nome:</label>
                     </div>
                     <input type="text" required placeholder="Seu nome aqui"></input>
-                    <div className="divLb1">
+                    <div className="divLb2">
                         <label>Senha:</label>
                     </div>
                     <input type="password" required placeholder="Sua senha aqui"></input>
